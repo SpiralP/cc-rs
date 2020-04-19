@@ -365,7 +365,7 @@ mod impl_ {
         let host_dylib_path = path
             .join("bin")
             .join(&format!("Host{}", host))
-            .join(&host.to_lowercase());
+            .join(&target.to_lowercase());
         let lib_path = path.join("lib").join(&target);
         let include_path = path.join("include");
         Some((bin_path, host_dylib_path, lib_path, include_path))
